@@ -371,6 +371,26 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "CategoryMultiSelect",
+				"values": {
+					"type": "crt.MultiSelect",
+					"label": "#ResourceString(CategoryMultiSelect_label)#",
+					"visible": true,
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": "",
+					"required": false,
+					"recordId": "$Id",
+					"recordRelationColumnName": "UsrParentYacht",
+					"selectSchemaName": "UsrYachtCategoryStorage",
+					"selectColumnName": "UsrCategory"
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_y8p6di7",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -393,7 +413,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -736,7 +756,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					},
 					"PDS_UsrManager_u8nlzhg": {
 						"modelConfig": {
-							"path": "PDS.UsrManager"
+							"path": "PDS.UsrMyManager"
 						}
 					},
 					"PDS_UsrManager_u8nlzhg_List": {
@@ -863,6 +883,9 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					},
 					"GridDetail_mgujhpm_PredefinedFilter": {
 						"value": null
+					},
+					"CategoryMultiSelect_List_Items_Predefined_Filter": {
+						"value": null
 					}
 				}
 			},
@@ -906,7 +929,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"entitySchemaName": "UsrYacht",
 							"attributes": {
 								"UsrManagerEmail_f8je1i1": {
-									"path": "UsrManager.Email",
+									"path": "UsrMyManager.Email",
 									"type": "ForwardReference"
 								}
 							}

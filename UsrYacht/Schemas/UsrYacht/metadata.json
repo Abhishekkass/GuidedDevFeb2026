@@ -106,7 +106,7 @@
 }
 + MetaData.Schema.D2 {
   "UId": "001c66cc-7b10-6cd2-a490-0257b90a84dc",
-  "A2": "UsrManager",
+  "A2": "UsrMyManager",
   "A3": "f2b48d00-8103-4b29-b43e-1296b9341e53",
   "A4": "f2b48d00-8103-4b29-b43e-1296b9341e53",
   "A5": "ae002e5f-f10d-49ae-b5bc-85b6e245faf9",
@@ -117,8 +117,8 @@
     "FB1": 3,
     "FB2": "4f367ca9-549b-4a1a-b64e-a40123f52ac0"
   },
-  "E17": "UsrManagerId",
-  "E18": "UsrManagerName"
+  "E17": "UsrMyManagerId",
+  "E18": "UsrMyManagerName"
 }
 + MetaData.Schema.D2 {
   "UId": "d7d5d74b-25c0-fcb0-20a2-cb125e088514",
